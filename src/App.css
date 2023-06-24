@@ -1,16 +1,80 @@
 body {
+  font-size: 20px;
+  font-family: arial,sans-serif;
+  background-color: #fff;
+  color: #0a0a23;
   margin: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+select, button {
+  border:none;
+  padding: 10px 20px;
+  border-radius:5px;
+  margin: 5px;
+  background-color: #0a0a23;
+  color: #fff;
+}
+
+button:disabled {
+  background-color:blue;
+}
+
+select:hover {
+  cursor:pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  transform:scale(1.05);
+}
+
+label {
+  font-size: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dddddd;
 }
 
 .bar-container {
+  max-width:fit-content;
+  min-height: 300px;
+  left: 20px;
   display: flex;
-  align-items:baseline;
+  align-items: baseline;
   justify-content: center;
+  align-content: flex-start;
+  padding: 20px;
+  box-shadow: rgba(0.15, 0.15, 0.15, 0.15) 5px 5px 10px 5px;
+  background-color: white;
+  margin-top: 10px;
 }
 
 .bar {
-  width: 5px;
-  background-color: black;
+  width: 6px;
+  background-color: #0a0a23;
   display: inline-block;
   margin: 0 1px;
+}
+
+.slider {
+  appearance: none;
+  height: 8px;
+  border-radius: 5px;
+  background: black;
+  opacity: 0.7;
+  margin-bottom: 5px;
+  cursor: pointer;
+  direction: rtl
+}
+
+.slider:hover {
+  opacity: 1;
 }
